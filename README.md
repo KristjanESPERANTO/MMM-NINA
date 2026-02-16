@@ -64,9 +64,8 @@ git pull
             showNoWarning: true,
             theme: "top", // Erlaubte Werte: top, top-floating, side
             updateIntervalInSeconds: 120,
-
         }
-    }
+    },
    ```
 
 ### Optionen
