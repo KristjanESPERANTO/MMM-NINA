@@ -42,6 +42,7 @@
     }
   },
   "devDependencies": {
+    "@eslint/js": "^9.37.0",
     "@rollup/plugin-commonjs": "^29.0.0",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
@@ -50,11 +51,11 @@
     "@types/magicmirror-module": "^2.16.6",
     "commit-and-tag-version": "^12.6.1",
     "eslint": "^9.39.2",
-    "eslint-plugin-jsdoc": "^61.5.0",
-    "prettier": "^3.7.4",
-    "rollup": "^4.53.5",
+    "eslint-plugin-jsdoc": "^62.5.5",
+    "prettier": "^3.8.1",
+    "rollup": "^4.57.1",
     "simple-git-hooks": "^2.13.1",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.50.0"
+    "typescript-eslint": "^8.55.0"
   }
 }
