@@ -22,13 +22,13 @@
   "homepage": "https://github.com/jalibu/MMM-NINA#readme",
   "scripts": {
     "build": "rollup -c",
-    "demo": "cd ../../ && MM_CONFIG_FILE=modules/MMM-NINA/config.demo.js node --run start:wayland:dev",
+    "demo": "cd ../../ && MM_CONFIG_FILE=modules/MMM-NINA/config.demo.js node --run start:dev",
     "dev": "rollup -c --sourcemap=inline",
     "dev:watch": "node --run dev -- --watch",
     "lint": "eslint && prettier --check .",
     "lint:fix": "eslint --fix && prettier . --write",
     "prepare": "simple-git-hooks",
-    "release": "commit-and-tag-version",
+    "release": "commit-and-tag-version --commit-all --config ./changelog.config.cjs",
     "test": "node --run type-check && node --run lint",
     "type-check": "tsc --noEmit"
   },
