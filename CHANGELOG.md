@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.9.1](https://github.com/jalibu/MMM-NINA/compare/v1.9.0...v1.9.1) (2026-02-16)
+
+
+### Documentation
+
+* add Code of Conduct ([ed87ab9](https://github.com/jalibu/MMM-NINA/commit/ed87ab9870fd3f6637a3da2e475c2c83f97d9a12))
+* add trailing comma to config example ([28ad854](https://github.com/jalibu/MMM-NINA/commit/28ad8542c90dd77b08cdabe5e33b9453c1a20248))
+* separate config section ([1e81d8d](https://github.com/jalibu/MMM-NINA/commit/1e81d8defaf7817514387e8b79a0c7ed40a27dd5))
+* update CHANGELOG.md with release notes for versions 1.8.1 to 1.0.0 ([ca75bde](https://github.com/jalibu/MMM-NINA/commit/ca75bde7f3dffaf102c343796b30ddf2e1b29b73))
+
+
+### Chores
+
+* add changelog configuration and update release script ([a32164c](https://github.com/jalibu/MMM-NINA/commit/a32164cbc661fcaafd758ab985211fff56f4ac61))
+* automate build on version bump for release ([21ddd66](https://github.com/jalibu/MMM-NINA/commit/21ddd66705a1667e4af1cc1723593b28c3ad06b2))
+* remove old rollup configuration file ([aa9dc42](https://github.com/jalibu/MMM-NINA/commit/aa9dc42c68460d673f6d7efe06810d64484b48c9))
+* update devDependencies ([0ddbd3e](https://github.com/jalibu/MMM-NINA/commit/0ddbd3ef0ad55c419c0824e06727f16fafc7b9c3))
+
 ## [1.9.0](https://github.com/jalibu/MMM-NINA/compare/v1.8.1...v1.9.0) (2025-12-17)
 
 
