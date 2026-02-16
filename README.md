@@ -2,7 +2,7 @@
 
 [![version](https://img.shields.io/github/package-json/v/jalibu/MMM-NINA)](https://github.com/jalibu/MMM-NINA/releases) [![Known Vulnerabilities](https://snyk.io/test/github/jalibu/MMM-NINA/badge.svg?targetFile=package.json)](https://snyk.io/test/github/jalibu/MMM-NINA?targetFile=package.json)
 
-Eine simple Client Implementierung der [NINA Warn App API](https://nina.api.bund.dev/) für die [MagicMirror²](https://magicmirror.builders/) Plattform.  
+Eine simple Client Implementierung der [NINA Warn App API](https://nina.api.bund.dev/) für die [MagicMirror²](https://magicmirror.builders/) Plattform.
 Klicke hier für den [Forum Thread](https://forum.magicmirror.builders/topic/15429/mmm-nina).
 
 Feedback und Mithilfe willkommen.
@@ -22,15 +22,26 @@ Wenn du meine Arbeit schätzt, dann freue ich mich über einen bescheidenen Beit
 
 ## Installation
 
-1. Navigiere in das `MagicMirror/modules` Verzeichnis und führe folgendes Kommando aus, um das Projekt auf deine Festplatte zu klonen:
+Navigiere in das `MagicMirror/modules` Verzeichnis und führe folgendes Kommando aus, um das Projekt auf deine Festplatte zu klonen:
 
-   ```bash
-   git clone https://github.com/jalibu/MMM-NINA
-   ```
+```bash
+git clone https://github.com/jalibu/MMM-NINA
+```
 
-2. Ermittle den amtlichen Gemeindeschlüssel deines Ortes aus [dieser Liste](https://www.xrepository.de/api/xrepository/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs_2021-07-31/download/Regionalschl_ssel_2021-07-31.json).
+## Update
 
-3. Binde das Modul abschließend in die MagicMirror-Konfiguration `MagicMirror/config/config.js` ein (Beispiel Konfiguration).
+Um das Modul zu aktualisieren, navigiere in das Modulverzeichnis und führe ein `git pull` aus:
+
+```bash
+cd ~/MagicMirror/modules/MMM-NINA
+git pull
+```
+
+## Config
+
+1. Ermittle den amtlichen Gemeindeschlüssel deines Ortes aus [dieser Liste](https://www.xrepository.de/api/xrepository/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs_2021-07-31/download/Regionalschl_ssel_2021-07-31.json).
+
+2. Binde das Modul anschließend in die MagicMirror-Konfiguration `MagicMirror/config/config.js` ein. Beispiel-Konfiguration:
 
    ```javascript
     {
@@ -57,15 +68,6 @@ Wenn du meine Arbeit schätzt, dann freue ich mich über einen bescheidenen Beit
         }
     }
    ```
-
-## Update
-
-Um das Modul zu aktualisieren, navigiere in das Modulverzeichnis und führe ein `git pull` aus:
-
-```bash
-cd ~/MagicMirror/modules/MMM-NINA
-git pull
-```
 
 ### Optionen
 
