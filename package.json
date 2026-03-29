@@ -42,20 +42,20 @@
     }
   },
   "devDependencies": {
-    "@eslint/js": "^9.37.0",
-    "@rollup/plugin-commonjs": "^29.0.0",
+    "@eslint/js": "^10.0.1",
+    "@rollup/plugin-commonjs": "^29.0.2",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
-    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-terser": "^1.0.0",
     "@rollup/plugin-typescript": "^12.3.0",
     "@types/magicmirror-module": "^2.16.6",
-    "commit-and-tag-version": "^12.6.1",
-    "eslint": "^9.39.2",
-    "eslint-plugin-jsdoc": "^62.5.5",
+    "commit-and-tag-version": "^12.7.1",
+    "eslint": "^10.1.0",
+    "eslint-plugin-jsdoc": "^62.8.1",
     "prettier": "^3.8.1",
-    "rollup": "^4.57.1",
+    "rollup": "^4.60.0",
     "simple-git-hooks": "^2.13.1",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.55.0"
+    "typescript-eslint": "^8.57.2"
   }
 }
