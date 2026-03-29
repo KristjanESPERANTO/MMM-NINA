@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.0](https://github.com/jalibu/MMM-NINA/compare/v1.9.1...v2.0.0) (2026-03-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* enforce 12-digit AGS and update Regionalschluessel dataset to 2026-03-31
+
+### Chores
+
+* change variable declaration in demo config ([bfc9b1a](https://github.com/jalibu/MMM-NINA/commit/bfc9b1a0714907d97d3a297d8ed68d927d8ad012))
+* update devDependencies ([f021d4f](https://github.com/jalibu/MMM-NINA/commit/f021d4f5914d6ce6d0124b275d5225842f7e8252))
+* update prepare script ([4dcc5ed](https://github.com/jalibu/MMM-NINA/commit/4dcc5ed6b086bdbbee07206574081b52ecd03138))
+
+
+### Code Refactoring
+
+* enforce 12-digit AGS and update Regionalschluessel dataset to 2026-03-31 ([036b14d](https://github.com/jalibu/MMM-NINA/commit/036b14dc9f76bb586018335ce01c3a7a35537f02))
+* extract AGS and alert processing into testable modules ([59aebf8](https://github.com/jalibu/MMM-NINA/commit/59aebf8ebcc73c0dc646e49c34a1c173a0648789))
+
+
+### Continuous Integration
+
+* add automated testing workflow for CI/CD ([13d3e45](https://github.com/jalibu/MMM-NINA/commit/13d3e45be4de557e7b62c19a0b0b523e7c3e5b9a))
+
 ## [1.9.1](https://github.com/jalibu/MMM-NINA/compare/v1.9.0...v1.9.1) (2026-02-16)
 
 
