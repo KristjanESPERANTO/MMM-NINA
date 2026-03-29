@@ -5,7 +5,7 @@
  * Usage: node --run demo
  */
 
-let config = {
+const config = {
   port: 8080,
   address: 'localhost',
   language: 'de',
