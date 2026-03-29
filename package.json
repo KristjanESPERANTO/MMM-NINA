@@ -27,7 +27,7 @@
     "dev:watch": "node --run dev -- --watch",
     "lint": "eslint && prettier --check .",
     "lint:fix": "eslint --fix && prettier . --write",
-    "prepare": "simple-git-hooks",
+    "prepare": "simple-git-hooks || true",
     "release": "commit-and-tag-version --commit-all --config ./changelog.config.cjs",
     "test": "node --run type-check && node --run lint",
     "type-check": "tsc --noEmit"
