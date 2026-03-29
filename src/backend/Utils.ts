@@ -1,7 +1,7 @@
 import * as Log from 'logger'
 import { Alert } from '../types/Alert'
 import { Config } from '../types/Config'
-import { daten } from './Regionalschluessel_2025-07-31.json'
+import { daten } from './Regionalschluessel_2026-03-31.json'
 
 /**
  * Transformiert NINA API Alerts und wendet Config-Filter an.
@@ -100,13 +100,4 @@ export function removeDuplicates(alerts: Alert[], config: Config): Alert[] {
 
     return true
   })
-}
-
-/**
- * Normalisiert einen AGS-Code auf die Dashboard-Query-Form.
- * @param ags - AGS-Code (z.B. "110000000000")
- * @returns Normalisierter AGS ohne die letzten 7 Ziffern (z.B. "1100000000")
- */
-export function harmonizeAgs(ags: string): string {
-  return `${ags.substring(0, ags.length - 7)}0000000`
 }

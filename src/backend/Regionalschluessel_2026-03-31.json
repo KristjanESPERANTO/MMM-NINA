@@ -1,29 +1,15 @@
 {
   "metadaten": {
-    "kennung": "urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs_2025-07-31",
+    "kennung": "urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs_2026-03-31",
     "kennungInhalt": "urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs",
-    "version": "2025-07-31",
-    "nameKurz": [
-      {
-        "value": "Regionalschlüssel"
-      }
-    ],
+    "version": "2026-03-31",
+    "nameKurz": [{ "value": "Regionalschlüssel" }],
     "nameLang": [
-      {
-        "value": "Gemeinden, dargestellt durch den Amtlichen Regionalschlüssel (ARS) des Statistischen Bundesamtes"
-      }
+      { "value": "Gemeinden, dargestellt durch den Amtlichen Regionalschlüssel (ARS) des Statistischen Bundesamtes" }
     ],
     "nameTechnisch": "Regionalschluessel",
-    "herausgebernameLang": [
-      {
-        "value": "Statistisches Bundesamt, Wiesbaden"
-      }
-    ],
-    "herausgebernameKurz": [
-      {
-        "value": "Destatis"
-      }
-    ],
+    "herausgebernameLang": [{ "value": "Statistisches Bundesamt, Wiesbaden" }],
+    "herausgebernameKurz": [{ "value": "Destatis" }],
     "beschreibung": [
       {
         "value": "Diese Codeliste stellt alle Gemeinden Deutschlands durch den Amtlichen Regionalschlüssel (ARS) dar, wie im Gemeindeverzeichnis des Statistischen Bundesamtes enthalten. Darüber hinaus enthält die Codeliste für die Stadtstaaten Hamburg, Bremen und Berlin Einträge für Stadt-/Ortsteile bzw. Stadtbezirke. Diese Einträge sind mit einem entsprechenden Hinweis versehen."
@@ -37,7 +23,7 @@
     "aenderungZurVorversion": [],
     "handbuchVersion": "1.2",
     "xoevHandbuch": false,
-    "gueltigAb": "2025-07-01T00:00:00.000+0200",
+    "gueltigAb": "2026-03-01T00:00:00.000+0100",
     "bezugsorte": []
   },
   "spalten": [
@@ -319,7 +305,6 @@
     ["010535391124", "Stubben", null],
     ["010535391127", "Walksfelde", null],
     ["010535391130", "Wentorf (Amt Sandesneben)", null],
-    ["010539105105", "Sachsenwald (Forstgutsbez.),gemfr.Geb.", null],
     ["010540033033", "Friedrichstadt, Stadt", null],
     ["010540056056", "Husum, Stadt", null],
     ["010540108108", "Reußenköge", null],
@@ -539,7 +524,6 @@
     ["010565690036", "Moorrege", null],
     ["010565690037", "Neuendeich", null],
     ["010570001001", "Ascheberg (Holstein)", null],
-    ["010570008008", "Bönebüttel", null],
     ["010570009009", "Bösdorf", null],
     ["010570057057", "Plön, Stadt", null],
     ["010570062062", "Preetz, Stadt", null],
@@ -616,6 +600,7 @@
     ["010575782051", "Mönkeberg", null],
     ["010575782074", "Schönkirchen", null],
     ["010575785005", "Belau", null],
+    ["010575785008", "Bönebüttel", null],
     ["010575785024", "Großharrie", null],
     ["010575785068", "Rendswühren", null],
     ["010575785069", "Ruhwinkel", null],
@@ -1006,7 +991,6 @@
     ["010605086096", "Weede", null],
     ["010605086097", "Wensin", null],
     ["010605086098", "Westerrade", null],
-    ["010609014014", "Buchholz (Forstgutsbez.),gemfr. Gebiet", null],
     ["010610029029", "Glückstadt, Stadt", null],
     ["010610046046", "Itzehoe, Stadt", null],
     ["010610113113", "Wilster, Stadt", null],
@@ -2812,6 +2796,7 @@
     ["064120000000", "Frankfurt am Main, Stadt", null],
     ["064130000000", "Offenbach am Main, Stadt", null],
     ["064140000000", "Wiesbaden, Landeshauptstadt", null],
+    ["064150000000", "Hanau, Brüder-Grimm-Stadt", null],
     ["064310001001", "Abtsteinach", null],
     ["064310002002", "Bensheim, Stadt", null],
     ["064310003003", "Biblis", null],
@@ -2898,7 +2883,6 @@
     ["064350011011", "Großkrotzenburg", null],
     ["064350012012", "Gründau", null],
     ["064350013013", "Hammersbach", null],
-    ["064350014014", "Hanau, Brüder-Grimm-Stadt", null],
     ["064350015015", "Hasselroth", null],
     ["064350016016", "Jossgrund", null],
     ["064350017017", "Langenselbold, Stadt", null],
@@ -3153,7 +3137,7 @@
     ["066330012012", "Helsa", null],
     ["066330013013", "Hofgeismar, Stadt", null],
     ["066330014014", "Immenhausen, Stadt", null],
-    ["066330015015", "Kaufungen", null],
+    ["066330015015", "Kaufungen, Kunigundengemeinde", null],
     ["066330016016", "Liebenau, Stadt", null],
     ["066330017017", "Lohfelden", null],
     ["066330018018", "Naumburg, Stadt", null],
@@ -6152,7 +6136,7 @@
     ["083165004017", "Herbolzheim, Stadt", null],
     ["083165004020", "Kenzingen, Stadt", null],
     ["083165004049", "Weisweil", null],
-    ["083165004053", "Rheinhausen", null],
+    ["083165004053", "Rheinhausen im Breisgau", null],
     ["083165005002", "Bahlingen am Kaiserstuhl", null],
     ["083165005012", "Endingen am Kaiserstuhl, Stadt", null],
     ["083165005013", "Forchheim", null],
@@ -7246,7 +7230,6 @@
     ["092735219163", "Elsendorf", null],
     ["092735219178", "Volkenschwand", null],
     ["092739451451", "Dürnbucher Forst", null],
-    ["092739452452", "Frauenforst", null],
     ["092739453453", "Hacklberg", null],
     ["092740111111", "Adlkofen", null],
     ["092740113113", "Altdorf, M", null],
@@ -7828,8 +7811,6 @@
     ["094755431165", "Schauenstein, St", null],
     ["094755432174", "Sparneck, M", null],
     ["094755432184", "Weißdorf", null],
-    ["094759451451", "Forst Schwarzenbach a.Wald", null],
-    ["094759453453", "Geroldsgrüner Forst", null],
     ["094759454454", "Martinlamitzer Forst-Nord", null],
     ["094760145145", "Kronach, St", null],
     ["094760146146", "Küps, M", null],
@@ -7850,7 +7831,6 @@
     ["094765434154", "Mitwitz, M", null],
     ["094765434171", "Schneckenlohe", null],
     ["094769451451", "Birnbaum", null],
-    ["094769453453", "Langenbacher Forst", null],
     ["094770121121", "Himmelkron", null],
     ["094770128128", "Kulmbach, GKSt", null],
     ["094770136136", "Mainleus, M", null],
@@ -7893,7 +7873,7 @@
     ["094790145145", "Röslau", null],
     ["094790150150", "Schönwald, St", null],
     ["094790152152", "Selb, GKSt", null],
-    ["094790166166", "Weißenstadt, St", null],
+    ["094790166166", "Bad Weißenstadt, St", null],
     ["094790169169", "Wunsiedel, St", null],
     ["094795442126", "Höchstädt i.Fichtelgebirge", null],
     ["094795442158", "Thiersheim, M", null],
@@ -9337,6 +9317,7 @@
     ["120735306458", "Randowtal", null],
     ["120735306578", "Uckerfelde", null],
     ["120735306645", "Zichow", null],
+    ["130009999998", "gemeindefreies Gebiet M-V", null],
     ["130009999999", "Küstengewässer einschl. Anteil am Festlandsockel", null],
     ["130030000000", "Rostock, Hanse- und Universitätsstadt", null],
     ["130040000000", "Schwerin, Landeshauptstadt", null],
@@ -10066,7 +10047,7 @@
     ["145210010010", "Amtsberg", null],
     ["145210020020", "Annaberg-Buchholz, Stadt", null],
     ["145210035035", "Aue-Bad Schlema, Stadt", null],
-    ["145210110110", "Breitenbrunn/Erzgeb.", null],
+    ["145210110110", "Breitenbrunn/Erzgeb., Hochschulort", null],
     ["145210130130", "Crottendorf", null],
     ["145210150150", "Drebach", null],
     ["145210160160", "Ehrenfriedersdorf, Stadt", null],
@@ -10214,7 +10195,7 @@
     ["145240020020", "Callenberg", null],
     ["145240060060", "Fraureuth", null],
     ["145240070070", "Gersdorf", null],
-    ["145240080080", "Glauchau, Stadt", null],
+    ["145240080080", "Glauchau, Stadt, Hochschulstadt", null],
     ["145240090090", "Hartenstein, Stadt", null],
     ["145240120120", "Hohenstein-Ernstthal, Stadt", null],
     ["145240140140", "Langenbernsdorf", null],
@@ -10341,7 +10322,7 @@
     ["146265233260", "Kreba-Neudorf / Chrjebja-Nowa Wjes", null],
     ["146265233460", "Rietschen / Rěčicy", null],
     ["146265235160", "Hähnichen", null],
-    ["146265235480", "Rothenburg/O.L., Stadt", null],
+    ["146265235480", "Rothenburg/O.L., Stadt, Hochschulstadt", null],
     ["146265237120", "Groß Düben / Dźěwin", null],
     ["146265237490", "Schleife / Slepo", null],
     ["146265237560", "Trebendorf / Trjebin", null],
@@ -10349,7 +10330,7 @@
     ["146265242600", "Weißwasser/O.L., Stadt / Běła Woda", null],
     ["146265502190", "Hohendubrau / Wysoka Dubrawa", null],
     ["146265502320", "Mücka / Mikow", null],
-    ["146265502440", "Quitzdorf am See", null],
+    ["146265502440", "Quitzdorf am See / Kwětanecy při jězoru", null],
     ["146265502580", "Waldhufen", null],
     ["146265503200", "Horka", null],
     ["146265503230", "Kodersdorf", null],
@@ -10653,7 +10634,7 @@
     ["150890235235", "Nienburg (Saale), Stadt", null],
     ["150890305305", "Schönebeck (Elbe), Stadt", null],
     ["150890307307", "Seeland, Stadt", null],
-    ["150890310310", "Staßfurt, Stadt", null],
+    ["150890310310", "Staßfurt, Salzstadt", null],
     ["150895051041", "Bördeaue", null],
     ["150895051043", "Börde-Hakel", null],
     ["150895051045", "Borne", null],
@@ -11027,11 +11008,8 @@
     ["160715008027", "Hammerstedt", null],
     ["160715008031", "Hetschburg", null],
     ["160715008037", "Kapellendorf", null],
-    ["160715008038", "Kiliansroda", null],
-    ["160715008042", "Kleinschwabhausen", null],
     ["160715008049", "Lehnstedt", null],
     ["160715008053", "Magdala, Stadt", null],
-    ["160715008055", "Mechelroda", null],
     ["160715008056", "Mellingen", null],
     ["160715008071", "Oettern", null],
     ["160715008089", "Umpferstedt", null],
@@ -11276,6 +11254,7 @@
     ["160770001001", "Altenburg, Stadt", null],
     ["160770028028", "Lucka, Stadt", null],
     ["160770032032", "Meuselwitz, Stadt", null],
+    ["160770043043", "Schmölln, Stadt", null],
     ["160775004005", "Fockendorf", null],
     ["160775004007", "Gerstenberg", null],
     ["160775004015", "Haselbach", null],
@@ -11300,8 +11279,6 @@
     ["160775050039", "Ponitz", null],
     ["160775051011", "Göpfersdorf", null],
     ["160775051023", "Langenleuba-Niederhain", null],
-    ["160775051036", "Nobitz", null],
-    ["160775052003", "Dobitschen", null],
-    ["160775052043", "Schmölln, Stadt", null]
+    ["160775051036", "Nobitz", null]
   ]
 }
