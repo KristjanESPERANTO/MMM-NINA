@@ -2,25 +2,18 @@ import * as NodeHelper from 'node_helper'
 import * as Log from 'logger'
 import { Config } from '../types/Config'
 import { Alert } from '../types/Alert'
-import { transformNinaAlerts, orderBySeverity, removeDuplicates } from './Utils'
+import { normalizeAgs, toDashboardAgs } from './Ags'
+import { orderBySeverity, removeDuplicates, transformNinaAlerts } from './AlertProcessing'
+import { daten } from './Regionalschluessel_2026-03-31.json'
 
 /**
- * Wandelt einen 12-stelligen AGS in die Dashboard-Query-Form um.
+ * Sucht den Gemeindenamen fuer einen 12-stelligen AGS.
  * @param ags - 12-stelliger AGS-Code
- * @returns Dashboard-AGS mit den ersten 5 Stellen und 7 Nullen
+ * @returns Gemeindename oder null wenn nicht gefunden
  */
-function toDashboardAgs(ags: string): string {
-  return `${ags.substring(0, 5)}0000000`
-}
-
-/**
- * Validiert AGS-Eingaben auf das 12-stellige Regionalschluessel-Format.
- * @param ags - AGS als String
- * @returns 12-stelliger AGS oder null bei ungueltigem Format
- */
-function normalizeAgs(ags: string): string | null {
-  const trimmed = ags.trim()
-  return /^\d{12}$/.test(trimmed) ? trimmed : null
+function getCityName(ags: string): string | null {
+  const entry = daten.find((row) => row[0] === ags)
+  return entry?.[1] ?? null
 }
 
 /**
@@ -77,7 +70,11 @@ module.exports = NodeHelper.create({
         if (response instanceof Error) {
           Log.warn(`API request for ${validAgs[i].raw} failed:`, response.message)
         } else {
-          alerts.push(...transformNinaAlerts(response, config, validAgs[i].normalized))
+          const cityName = getCityName(validAgs[i].normalized)
+          if (!cityName) {
+            Log.warn(`AGS '${validAgs[i].normalized}' konnte keiner Gemeinde zugeordnet werden.`)
+          }
+          alerts.push(...transformNinaAlerts(response, config, cityName))
         }
       }
 

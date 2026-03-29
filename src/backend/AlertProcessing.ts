@@ -1,22 +1,15 @@
-import * as Log from 'logger'
-import { Alert } from '../types/Alert'
-import { Config } from '../types/Config'
-import { daten } from './Regionalschluessel_2026-03-31.json'
+import type { Alert } from '../types/Alert'
+import type { Config } from '../types/Config'
 
 /**
  * Transformiert NINA API Alerts und wendet Config-Filter an.
  * @param alerts - Rohes Alert-Array von der NINA API
  * @param config - Module-Konfiguration mit Filtern und Einstellungen
- * @param alertAgs - AGS-Code der Gemeinde
+ * @param cityName - Gemeindename fuer den AGS-Code (oder null)
  * @returns Gefilterte und angereicherte Alerts mit Stadt-Namen
  */
-export function transformNinaAlerts(alerts: Alert[], config: Config, alertAgs: string): Alert[] {
+export function transformNinaAlerts(alerts: Alert[], config: Config, cityName: string | null): Alert[] {
   const now = new Date(Date.now()).getTime()
-
-  const city = daten.find((ags) => ags[0] === alertAgs)
-  if (!city) {
-    Log.warn(`AGS '${alertAgs}' konnte keiner Gemeinde zugeordnet werden.`)
-  }
 
   const filtered = alerts.filter((alert) => {
     if (config.hideCancelledWarnings && alert.payload.data.msgType === 'Cancel') {
@@ -38,7 +31,7 @@ export function transformNinaAlerts(alerts: Alert[], config: Config, alertAgs: s
       alert.payload.data.severity = 'Cancel'
     }
 
-    alert.cityNames = city && city[1] ? [city[1]] : []
+    alert.cityNames = cityName ? [cityName] : []
 
     return alert
   })

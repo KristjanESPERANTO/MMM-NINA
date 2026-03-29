@@ -29,7 +29,8 @@
     "lint:fix": "eslint --fix && prettier . --write",
     "prepare": "simple-git-hooks || true",
     "release": "commit-and-tag-version --commit-all --config ./changelog.config.cjs",
-    "test": "node --run type-check && node --run lint",
+    "test": "node --run type-check && node --run lint && node --run test:unit",
+    "test:unit": "node --experimental-strip-types --test tests/unit/**/*.test.mjs",
     "type-check": "tsc --noEmit"
   },
   "simple-git-hooks": {

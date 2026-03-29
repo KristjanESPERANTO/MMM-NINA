@@ -107,7 +107,8 @@ Contribution for this module is welcome!
 | `node --run dev`        | Development build with inline sourcemaps                                            |
 | `node --run demo`       | Start MagicMirror with demo config (MM_CONFIG_FILE=modules/MMM-NINA/config.demo.js) |
 | `node --run dev:watch`  | Watch mode for active development                                                   |
-| `node --run test`       | Full quality check (TypeScript + ESLint + Prettier)                                 |
+| `node --run test`       | Full quality check (TypeScript + ESLint + Prettier + Unit Tests)                    |
+| `node --run test:unit`  | Run unit tests (Node test runner)                                                   |
 | `node --run type-check` | TypeScript type validation only                                                     |
 | `node --run lint`       | Check code style (ESLint + Prettier)                                                |
 | `node --run lint:fix`   | Auto-fix code style issues                                                          |
