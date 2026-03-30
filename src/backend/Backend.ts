@@ -6,6 +6,8 @@ import { normalizeAgs, toDashboardAgs } from './Ags'
 import { orderBySeverity, removeDuplicates, transformNinaAlerts } from './AlertProcessing'
 import { daten } from './Regionalschluessel_2026-03-31.json'
 
+declare const module: { exports: unknown }
+
 /**
  * Sucht den Gemeindenamen fuer einen 12-stelligen AGS.
  * @param ags - 12-stelliger AGS-Code
