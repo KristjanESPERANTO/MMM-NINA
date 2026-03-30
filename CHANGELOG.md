@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.1](https://github.com/jalibu/MMM-NINA/compare/v2.0.0...v2.0.1) (2026-03-30)
+
+
+### Fixed
+
+* declare module exports for proper module handling ([bfb7bb9](https://github.com/jalibu/MMM-NINA/commit/bfb7bb9b047d9c903e8d08ad5943be0c32fa0cfd))
+
 ## [2.0.0](https://github.com/jalibu/MMM-NINA/compare/v1.9.1...v2.0.0) (2026-03-29)
 
 
