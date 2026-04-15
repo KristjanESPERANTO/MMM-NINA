@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.2](https://github.com/jalibu/MMM-NINA/compare/v2.0.1...v2.0.2) (2026-04-15)
+
+
+### Fixed
+
+* add missing types declaration for magicmirror-module ([7afb536](https://github.com/jalibu/MMM-NINA/commit/7afb536b501c9ed6190485e4149da96cafeb8c9d))
+* **test:** run unit tests from compiled TS output ([c1d36da](https://github.com/jalibu/MMM-NINA/commit/c1d36da239e0d96c96b86b6d72aa909efc8adf07))
+* update NINA asset host for icons ([9ac90e6](https://github.com/jalibu/MMM-NINA/commit/9ac90e6620793e9a267f573b99bdbfe1ddb50d9b)), closes [#39](https://github.com/jalibu/MMM-NINA/issues/39)
+
+
+### Chores
+
+* add "type" field to package.json ([28c5e7a](https://github.com/jalibu/MMM-NINA/commit/28c5e7aecf8715f549e43d2aa0b36de3fa90d06e))
+* add moduleResolution option to TypeScript plugin in rollup config ([79dcc8f](https://github.com/jalibu/MMM-NINA/commit/79dcc8f6d3341e6033f80b9ae56034c0356d93d8))
+* update devDependencies ([839e4b9](https://github.com/jalibu/MMM-NINA/commit/839e4b94fb81dd9cc0fdcce5adb258cadbc50a52))
+
 ## [2.0.1](https://github.com/jalibu/MMM-NINA/compare/v2.0.0...v2.0.1) (2026-03-30)
 
 
