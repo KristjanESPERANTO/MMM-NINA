@@ -25,7 +25,7 @@ export default [
     input: './src/frontend/Frontend.ts',
     external: ['logger'],
     plugins: [
-      typescript({ module: 'ESNext' }),
+      typescript({ module: 'ESNext', moduleResolution: 'bundler' }),
       nodeResolve(),
       commonjs(),
       terser({
@@ -49,7 +49,7 @@ export default [
     external: ['node_helper', 'logger'],
     plugins: [
       json(),
-      typescript({ module: 'ESNext' }),
+      typescript({ module: 'ESNext', moduleResolution: 'bundler' }),
       nodeResolve(),
       terser({
         format: {
