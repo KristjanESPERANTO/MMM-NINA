@@ -30,7 +30,8 @@
     "prepare": "simple-git-hooks || true",
     "release": "commit-and-tag-version --commit-all --config ./changelog.config.cjs",
     "test": "node --run type-check && node --run lint && node --run test:unit",
-    "test:unit": "node --experimental-strip-types --test tests/unit/**/*.test.mjs",
+    "test:unit": "node --run test:unit:build && node --test tests/unit/**/*.test.mjs",
+    "test:unit:build": "node -e \"require('node:fs').rmSync('.test-dist', { recursive: true, force: true })\" && tsc -p tsconfig.unit-tests.json",
     "type-check": "tsc --noEmit"
   },
   "simple-git-hooks": {

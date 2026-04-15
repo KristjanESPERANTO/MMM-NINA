@@ -1,7 +1,9 @@
 import { describe, it } from 'node:test'
 import assert from 'node:assert/strict'
+import { createRequire } from 'node:module'
 
-import { normalizeAgs, toDashboardAgs } from '../../src/backend/Ags.ts'
+const require = createRequire(import.meta.url)
+const { normalizeAgs, toDashboardAgs } = require('../../.test-dist/backend/Ags.js')
 
 describe('normalizeAgs', () => {
   it('accepts a valid 12-digit ags', () => {

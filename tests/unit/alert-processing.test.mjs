@@ -1,7 +1,13 @@
 import { describe, it } from 'node:test'
 import assert from 'node:assert/strict'
+import { createRequire } from 'node:module'
 
-import { orderBySeverity, removeDuplicates, transformNinaAlerts } from '../../src/backend/AlertProcessing.ts'
+const require = createRequire(import.meta.url)
+const {
+  orderBySeverity,
+  removeDuplicates,
+  transformNinaAlerts
+} = require('../../.test-dist/backend/AlertProcessing.js')
 
 const createConfig = (overrides = {}) => ({
   ags: ['110000000000'],

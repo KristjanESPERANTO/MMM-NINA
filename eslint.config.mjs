@@ -10,6 +10,6 @@ export default defineConfig(
   tseslint.configs.stylistic,
   jsdoc.configs['flat/recommended-typescript'],
   {
-    ignores: ['MMM-NINA.js', 'node_helper.js', 'config.demo.js']
+    ignores: ['MMM-NINA.js', 'node_helper.js', 'config.demo.js', '.test-dist/**']
   }
 )
